@@ -2,12 +2,31 @@
 <html>
 <head>
 	<title>taqwa is very 5ara</title>
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 	
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+	
+
 </head>
 <body>
-	<h1> gymnastics</h1> 
-	<p>gymnastics is the best sport because it combines fashion,music and sports .it also looks very cool and very fun to watch</p>
+	<h1>My favorite sport</h1>
+	<h1> soccer</h1> 
+	<ul>
+                {% for player in players %}
+                <li> {{player}} </li>
+                {% endfor %}
+
+    </ul>
+	{% if likes_same_sport == False %}
+		
+	    <p>soccer is the best sport because it looks very cool and very fun to watch</p>
+            {% endif %}
+        </p>
+        <img src="https://ichef.bbci.co.uk/images/ic/976xn/p06dz6xj.jpg", width="200", height="150">
+        <img src="http://e00-marca.uecdn.es/assets/multimedia/imagenes/2018/02/19/15190388758170.jpg", width="200", height="150">
+        <img src="http://dailypost.ng/wp-content/uploads/2017/05/Man-United-Man-United-Transfer-News-Man-United-Transfers-Antoine-Griezmann-Antoine-Griezmann-Man-United-Chelsea-News-Chels-61472.jpg", width="200", height="150">
+          
+
 
 </body>
 </html>
